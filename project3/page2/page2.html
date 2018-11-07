@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="sound-mouseover.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halloween</title> <!-- put your net art project title here -->
+  <link rel="stylesheet" type="text/css" href="maintwo.css">
+  <style>
+    img:hover {
+      animation: shake 0.5s;
+      animation-iteration-count: infinite;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translate(1px, 1px) rotate(0deg);
+      }
+
+      10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+      }
+
+      20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+      }
+
+      30% {
+        transform: translate(3px, 2px) rotate(0deg);
+      }
+
+      40% {
+        transform: translate(1px, -1px) rotate(1deg);
+      }
+
+      50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+      }
+
+      60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+      }
+
+      70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+      }
+
+      80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+      }
+
+      90% {
+        transform: translate(1px, 2px) rotate(0deg);
+      }
+
+      100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <body style="background-color:purple;">
+
+
+
+    <a>
+      <href="about.htm" onmouseover="playclip();">
+        <a href="#"><img src="mms.png"></a>
+        <a href="/project3/page2/pagethree.html"><img src="hand.png"></a>
+        <a href=""><img src="bat.png"></a>
+        <a href="/project3/page2/face.html"><img src="kitkat.png"></a>
+        <a href="#"><img src="RIP.png"></a>
+
+    </a>
+
+    <audio>
+      <source src="click.mp3">
+      <source src="click.ogg">
+    </audio>
+    <div id="sounddiv">
+      <bgsound id="sound">
+    </div>
+  </body>
+
+</html>

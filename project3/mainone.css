@@ -1,0 +1,19 @@
+
+div {
+    border: 20px solid gray;
+    padding: 20px;
+}
+
+p {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF52;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    font-size:50px;
+}
+
+a {
+    text-decoration: none;
+    color: #008CBA;
+}
