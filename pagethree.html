@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d5855b">
-<meta name="msapplication-TileColor" content="#603cba">
-<meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d5855b">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
     box-sizing: border-box;
 }
 
@@ -53,32 +54,34 @@ body {
 }
 </style>
 </head>
+
 <body>
 
-<video autoplay loop id="myVideo">
-  <source src="pumpkin.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+  <video autoplay loop id="myVideo">
+    <source src="pumpkin.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
 
-<div class="content">
+  <div class="content">
 
-  <button id="myBtn" onclick="myFunction()">Pause</button>
-</div>
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+  </div>
 
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
+  <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
 
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+  </script>
 
 </body>
+
 </html>
