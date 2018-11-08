@@ -3,13 +3,42 @@
 
 <head>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d5855b">
-  <meta name="msapplication-TileColor" content="#603cba">
-  <meta name="theme-color" content="#ffffff">
-  <script type="text/javascript" src="sound-mouseover.js"></script>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d5855b">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="theme-color" content="#ffffff">
+  <!-- <script type="text/javascript" src="sound-mouseover.js"></script> -->
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            //Plays the file when the mouse is over the element
+            $("#candy").click  (function (){
+
+                $("#song1")[0].play();
+
+            });
+
+            //Plays the file when the mouse is over the element
+            $("#candy").mouseover (function (){
+
+                $("#song1")[0].play();
+
+            });
+
+            //Pause the file when the mouse leaves the element
+             $("#candy").mouseleave (function (){
+
+                $("#song1")[0].pause();
+
+            });
+
+        });
+
+    </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Halloween</title> <!-- put your net art project title here -->
@@ -79,15 +108,15 @@
 
     <a>
       <href="about.htm" onmouseover="playclip();">
-        <a href="#"><img src="mms.png"></a>
+        <a href="#"><img id="candy" src="mms.png"></a>
         <a href="pagethree.html"><img src="hand.png"></a>
-        <a href=""><img src="bat.png"></a>
-        <a href="face.html"><img src="kitkat.png"></a>
-        <a href="#"><img src="RIP.png"></a>
+        <a href=""><img id="candy" src="bat.png"></a>
+        <a href="/face.html"><img src="kitkat.png"></a>
+        <a href=""><img id="candy" src="RIP.png"></a>
 
     </a>
 
-    <audio>
+    <audio id="song1">
       <source src="click.mp3">
       <source src="click.ogg">
     </audio>
