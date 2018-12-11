@@ -15,16 +15,28 @@ body {
   line-height: 1.5;
   padding: 30px 20px;
   text-align: center;
+  background-image: url("pexels.jpg");
+   background-position: center;
+   background-position: top;
+   background-size: auto;
 }
 
 h1 {
   padding: 20px 0px 10px 0px;
+  text-align: center;
+}
+
+p{
+text-align: left;
+
+
 }
 
 /* This changes color and removes default underline in links  */
 a {
-color: #69CBBB;
-text-decoration: none;
+color: black;
+/* text-decoration: none; */
+text-align: center;
 }
 
 /* Centers images */
@@ -42,7 +54,7 @@ portfolio entries */
 .portfolio-item {
   margin-top: 60px;
   padding: 40px;
-  background-color: #f7f7f7;
+  background-color: #F7F2EE;
 }
 
 /* The embed-container class is for iframes containing content from Vimeo. This will allow videos to resize when the window is scaled, making this site mobile-friendly! */
